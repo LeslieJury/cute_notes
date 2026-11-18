@@ -1,0 +1,8 @@
+{
+  "name": "cute-notes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A beginner-friendly cute notes app built with TypeScript.",
+  "scripts": { "build": "tsc", "demo": "node dist/terminal.js" },
+  "devDependencies": { "typescript": "^5.7.2" }
+}

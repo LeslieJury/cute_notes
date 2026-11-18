@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cute Notes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <p class="eyebrow">A cute and simple way to jot down your thoughts</p>
+        <h1>Cute Notes</h1>
+        <p class="subtitle">Write down an idea, plan, or reminder.</p>
+      </header>
+
+      <section class="write-panel">
+        <h2>Write a note</h2>
+        <form id="note-form">
+
+          <label for="title">Title</label>
+          <input id="title" type="text" placeholder="Note title" maxlength="60" />
+
+          <label for="content">Note</label>
+          <textarea id="content" rows="4" placeholder="Write your note here" maxlength="300"></textarea>
+
+          <div class="form-row">
+            <label for="mood">
+              Mood
+              <select id="mood">
+                <option value="sunny">Sunny</option>
+                <option value="cozy">Cozy</option>
+                <option value="dreamy">Dreamy</option>
+                <option value="focused">Focused</option>
+              </select>
+            </label>
+            <button class="primary-button" type="submit">Add note</button>
+          </div>
+
+          <p id="message" class="message" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="notes-section">
+        <div class="section-heading">
+          <div>
+            <h2>My notes</h2>
+            <p id="note-count">0 notes</p>
+          </div>
+          <label class="search-box" for="search">
+            Search notes
+            <input id="search" type="search" placeholder="Search" />
+          </label>
+        </div>
+
+        <div id="note-list" class="note-grid"></div>
+      </section>
+
+      <footer class="app-footer">Leslie Jury - 2026</footer>
+    </main>
+
+    <script src="dist/main.js"></script>
+  </body>
+</html>
