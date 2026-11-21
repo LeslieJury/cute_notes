@@ -21,7 +21,7 @@ const starterNotes: Note[] = [
   {
     id: 2,
     title: "Tiny goal",
-    content: "Practice TypeScript for 20 minutes and celebrate the progress!",
+    content: "Practice TypeScript for 20 minutes",
     mood: "focused",
     createdAt: "Yesterday",
   },
@@ -43,7 +43,7 @@ class NoteBook {
     try {
       return JSON.parse(savedNotes) as Note[];
     } catch {
-      // Uses the starter notes if saved data is broken.
+      // Uses the starter notes if saved data is broken
       return starterNotes;
     }
   }
@@ -94,7 +94,7 @@ const noteList = document.querySelector<HTMLElement>("#note-list")!;
 const noteCount = document.querySelector<HTMLElement>("#note-count")!;
 const message = document.querySelector<HTMLElement>("#message")!;
 
-// This function counts words by calling itself.
+// This function counts words recursively by calling itself
 function countWords(words: string[]): number {
   if (words.length === 0) return 0;
   return 1 + countWords(words.slice(1));
