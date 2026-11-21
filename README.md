@@ -6,7 +6,7 @@ I wrote this software to improve my understanding of TypeScript. The project giv
 
 The video below will demonstrate the running app and walk through the TypeScript code. Replace the placeholder with the public or unlisted video link after recording.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/JPurccaOd1o)
 
 # Development Environment
 
